@@ -1,11 +1,19 @@
+import React from 'react';
 import './App.css';
 
-function App() {
+const Painel = () => { 
   return (
-    <div className="App">
-      <h1 className="title">testando</h1>
+    <div className="painel">
+      0.75
     </div>
-  );
+  )
 }
 
-export default App;
+const Botao = (props) => {
+  return (
+    <div className={props.tipo}>
+      {props.digito}
+    </div>
+  )
+}
+
