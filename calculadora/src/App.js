@@ -19,7 +19,7 @@ const Botao = (props) => {
 
 function App() {
   return(
-    <div className='painel-botoes'>
+    <div className="painel-botoes">
       <Painel/>
       <Botao tipo="botao-ac" digito="AC" />
       <Botao tipo="botao-operacao" digito="/" />
@@ -35,8 +35,7 @@ function App() {
       <Botao tipo="botao-numero" digito="2" />
       <Botao tipo="botao-numero" digito="3" />
       <Botao tipo="botao-operacao" digito="+" />
-       </div>
-    
+    </div>
   );
 }
 
