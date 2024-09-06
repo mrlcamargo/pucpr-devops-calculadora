@@ -4,7 +4,7 @@ import './App.css';
 const Painel = () => { 
   return (
     <div className="painel">
-      0.75
+      1.00
     </div>
   )
 }
@@ -35,6 +35,7 @@ function App() {
       <Botao tipo="botao-numero" digito="2" />
       <Botao tipo="botao-numero" digito="3" />
       <Botao tipo="botao-operacao" digito="+" />
+      <h1>testando CI</h1>
     </div>
   );
 }
