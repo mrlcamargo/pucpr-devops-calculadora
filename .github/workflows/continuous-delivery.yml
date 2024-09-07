@@ -15,7 +15,7 @@ jobs:
     - name: Continuous Delivery
       uses: actions/upload-artifact@v4
       with:
-        name: projetozipado.zip
+        name: pucpr-devops-calculadora.zip
         path: |
           README.md
           
