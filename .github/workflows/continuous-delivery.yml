@@ -1,4 +1,4 @@
-name: DevOps - Continuous Delivery/Deploy #exemplo
+name: DevOps - Continuous Delivery - Continuous Deployment
 
 on: 
   push:
@@ -15,9 +15,9 @@ jobs:
     - name: Continuous Delivery
       uses: actions/upload-artifact@v4
       with:
-        name: projeto.zip
+        name: pucpr-devops-calculadora.zip
         path: |
-          "./src/app.js"
+          README.md
           
   continuous-deployment:
     runs-on: ubuntu-latest
