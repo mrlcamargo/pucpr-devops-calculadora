@@ -1,4 +1,4 @@
-name: DevOps - Continuous Integration # nova branch
+name: DevOps - Continuous Integration
 
 on: pull_request
 
@@ -17,3 +17,5 @@ jobs:
           npm install
           npm run build
           npm run test
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
