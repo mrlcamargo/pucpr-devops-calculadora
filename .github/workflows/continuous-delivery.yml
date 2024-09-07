@@ -26,7 +26,6 @@ jobs:
     steps:
     - uses: actions/download-artifact@v4
       with:
-        name: pucpr-devops-calculadora.zip
+        name: projeto.zip
     - name: Exibe os arquivos baixados
       run: ls -R
-      
