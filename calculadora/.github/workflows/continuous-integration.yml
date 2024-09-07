@@ -1,9 +1,6 @@
 name: DevOps - Continuos Integration
 
-on:
-  push:
-    branches:
-      - main
+on: pull_request
 
 jobs:
   continuous-integration:
@@ -11,12 +8,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
       - name: Instalando o Node.js
         uses: actions/setup-node@v2
         with: 
-          node-version: 22.x
-
+          node-version: 22.
       - name: Instalação, build e testes do projeto
         run: |
           npm install
