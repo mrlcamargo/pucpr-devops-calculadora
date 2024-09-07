@@ -1,4 +1,4 @@
-name: DevOps - Continuous Integration # corrigir pastas
+name: DevOps - Continuous Integration # correção pastas
 
 on: pull_request
 

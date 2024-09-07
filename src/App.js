@@ -35,7 +35,7 @@ function App() {
       <Botao tipo="botao-numero" digito="2" />
       <Botao tipo="botao-numero" digito="3" />
       <Botao tipo="botao-operacao" digito="+" />
-      <h1>testando CI</h1>
+      <h1>pastas todas corrigidas</h1>
     </div>
   );
 }
