@@ -1,4 +1,4 @@
-name: DevOps - Continuos Integration #teste2
+name: DevOps - Continuos Integration
 
 on: pull_request
 
