@@ -1,4 +1,4 @@
-name: DevOps - Continuous Delivery | Continuous Deployment
+name: DevOps - Continuous Delivery - Continuous Deployment
 
 on: 
   push:
@@ -17,7 +17,7 @@ jobs:
       with:
         name: pucpr-devops-calculadora.zip
         path: |
-          "./src/app.js"
+          README.md
           
   continuous-deployment:
     runs-on: ubuntu-latest
