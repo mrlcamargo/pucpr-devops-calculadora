@@ -27,33 +27,33 @@ jobs:
     - name: Exibe os arquivos baixados
       run: ls -R
 
-  docker:
-    runs-on: ubuntu-latest
-    needs: deploy
-    
-    steps:
-      -
-        name: Checkout
-        uses: actions/checkout@v4
-      -
-        # Add support for more platforms with QEMU (optional)
-        # https://github.com/docker/setup-qemu-action
-        name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      -
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      -
-        name: Login Docker Hub
-        uses: docker/login-action@v3
-        with: 
-          username: ${{ secrets.DOCKERHUB_USERNAME }} # secret configurado no github
-          password: ${{ secrets.DOCKERHUB_TOKEN }} # secret configurado no github
-      -
-        name: Build + push
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: false 
-          tags: user/app:latest
+#  docker:
+#    runs-on: ubuntu-latest
+#    needs: deploy
+#    
+#    steps:
+#      -
+#        name: Checkout
+#        uses: actions/checkout@v4
+#      -
+#        # Add support for more platforms with QEMU (optional)
+#        # https://github.com/docker/setup-qemu-action
+#        name: Set up QEMU
+#        uses: docker/setup-qemu-action@v3
+#     -
+#        name: Set up Docker Buildx
+#        uses: docker/setup-buildx-action@v3
+#
+#      -
+#        name: Login Docker Hub
+#        uses: docker/login-action@v3
+#        with: 
+#          username: ${{ secrets.DOCKERHUB_USERNAME }} # secret configurado no github
+#          password: ${{ secrets.DOCKERHUB_TOKEN }} # secret configurado no github
+#      -
+#        name: Build + push
+#        uses: docker/build-push-action@v6
+#        with:
+#          context: .
+#          push: false 
+#          tags: user/app:latest
