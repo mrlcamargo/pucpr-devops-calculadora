@@ -48,8 +48,8 @@ jobs:
         name: Login Docker Hub
         uses: docker/login-action@v3
         with: 
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }} # secret configurado no github
+          password: ${{ secrets.DOCKERHUB_TOKEN }} # secret configurado no github
       -
         name: Build + push
         uses: docker/build-push-action@v6
