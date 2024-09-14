@@ -1,6 +1,6 @@
 name: Discord-logbot
 on:
-  -push
+  - push
 
 jobs: 
   discord-integration: 
