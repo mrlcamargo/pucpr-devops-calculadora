@@ -14,14 +14,13 @@ jobs:
           node-version: '20'
       - name: Instalação, build e testes unitários do projeto
         run: |
-          npm install -g yarn
+          export NODE_OPTIONS=--openssl-legacy-provider
           yarn install
-          npm run build
-          npm run test
-          npm test -- --coverage
-          env:
-            SKIP_PREFLIGHT_CHECK=true
-            CI:true
+          yarn build
+          yarn test --coverage
+        env:
+          SKIP_PREFLIGHT_CHECK: true
+          CI: true
 
   docker:
     runs-on: ubuntu-latest
