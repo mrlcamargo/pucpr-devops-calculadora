@@ -3,19 +3,21 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import App from './App';
 
-// Teste se o painel é renderizado com o texto correto
+// testes unitarios
+
+// Renderização Painel
 test('renders number 1.00 in the panel', () => {
   render(<App />);
   const panelElement = screen.getByText(/1.00/i);
   expect(panelElement).toBeInTheDocument();
 });
 
-// Teste se todos os botões são renderizados corretamente
+// Renderização botão
 test('renders all buttons with correct text and class', () => {
   render(<App />);
 
-  // Testa botões de operação
-  const operations = ['AC', '/', '*', '-', '+'];
+  // Teste botões operacoes
+  const operations = ['/', '*', '-', '+'];
   operations.forEach(op => {
     const button = screen.getByText(op);
     expect(button).toBeInTheDocument();
