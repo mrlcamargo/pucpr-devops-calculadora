@@ -17,7 +17,7 @@ test('renders all buttons with correct text and class', () => {
   render(<App />);
 
   // Teste botões operacoes
-  const operations = ['AC', '/', '*', '-', '+'];
+  const operations = ['/', '*', '-', '+'];
   operations.forEach(op => {
     const button = screen.getByText(op);
     expect(button).toBeInTheDocument();

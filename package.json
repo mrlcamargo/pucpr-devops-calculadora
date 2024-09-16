@@ -35,7 +35,6 @@
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.0.0",
-    "jest": "latest",
-    "react-scripts": "latest"
+    "jest": "latest"
   }
 }
